@@ -286,6 +286,3 @@ def api_ctc():
         })
     r_ctc = abs(beta)/alpha
     return jsonify({"family": fam, "r_ctc": float(r_ctc), "alpha": float(alpha), "beta": float(beta)})
-
-if __name__ == "__main__":
-    app.run(debug=True)
