@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warp Drive × Parallel Universes × 3D Time</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Warp Drive Mechanics Across Parallel Universes — Time is 3D</h1>
+    <div class="controls">
+      <label>E_total <input id="E" type="range" min="0" max="3" step="0.01" value="1.5" /></label>
+      <label>ρ <input id="rho" type="range" min="-1" max="1" step="0.01" value="0.6" /></label>
+      <label>Mode
+        <select id="mode">
+          <option value="rel">Relativistic</option>
+          <option value="class">Classical</option>
+        </select>
+      </label>
+      <label>Q (thruster) <input id="Q" type="range" min="0" max="1" step="0.01" value="0.2" /></label>
+      <label>R (gear) <input id="R" type="range" min="0" max="1" step="0.01" value="0.5" /></label>
+      <button id="jump">Traverse Wormhole</button>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section>
+      <h2>Warp Bubble (3D)</h2>
+      <div id="warp3d" class="plot"></div>
+    </section>
+    <section>
+      <h2>CTC / Light‑Cone (3D + Top‑Down)</h2>
+      <div id="ctc3d" class="plot"></div>
+      <div id="ctc2d" class="plot small"></div>
+    </section>
+    <section>
+      <h2>Quantum Thruster × Wormhole Map</h2>
+      <div id="thruster" class="plot"></div>
+    </section>
+    <section>
+      <h2>3D Time Navigation</h2>
+      <div id="time3d" class="plot"></div>
+      <div class="row">
+        <div id="invSpace" class="plot small"></div>
+        <div id="invTime" class="plot small"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Simulon Super Simulation • Flask + Plotly • © You</small>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

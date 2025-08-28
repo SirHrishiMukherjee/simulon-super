@@ -1,0 +1,21 @@
+:root{
+  --bg:#0a0d17; --panel:#0f1422; --ink:#eaf1ff; --muted:#a8b3c9; --accent:#64b5ff;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg); color:var(--ink); font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+header{padding:14px 18px; border-bottom:1px solid #1d2333; position:sticky; top:0; background:linear-gradient(180deg,#0b1120 0,#0b1120cc 60%,transparent)}
+h1{margin:0 0 10px; font-size:20px; letter-spacing:.4px}
+.controls{display:flex; flex-wrap:wrap; gap:12px; align-items:center}
+.controls label{font-size:13px; color:var(--muted); display:flex; gap:8px; align-items:center}
+.controls input[type="range"]{width:160px}
+.controls select, .controls button{background:#141a2b; color:var(--ink); border:1px solid #26304a; border-radius:8px; padding:6px 10px}
+.controls button{cursor:pointer}
+
+main.grid{display:grid; gap:14px; padding:14px; grid-template-columns:1fr 1fr; align-items:start}
+section{background:var(--panel); border:1px solid #1d2333; border-radius:14px; padding:12px}
+section h2{margin:4px 6px 10px; font-size:16px; color:#cfe3ff}
+.plot{width:100%; height:420px}
+.plot.small{height:260px}
+.row{display:flex; gap:8px}
+footer{padding:12px 16px; color:#8ea0c4}
